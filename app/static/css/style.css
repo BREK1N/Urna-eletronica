@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+#menu{
+    display: flex;
+}
+
+/* botao */
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    color: #eee;
+    border-radius: 8px;
+    background: #222;
+
+    padding: 1rem 4rem;
+
+    transition: 600ms;
+}
+
+.btn:hover{
+    color: #222;
+    background: rgb(154, 149, 149);
+}
+
+/* menu da esquerda */
+
+#left-menu{
+    width: 70vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.presidente{
+    width: 10%;
+    border: 1px solid black;
+    border-radius: 50%;
+
+    position: absolute;
+    z-index: 2;
+
+    background: yellow;
+
+    box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.75);
+}
+
+.vice{
+    width: 20%;
+    border: 1px solid black;
+    border-radius: 50%;
+
+    margin-top: 155px;
+    margin-left: 130px;
+
+    background: green;
+
+
+    position: relative;
+    z-index: 4;
+
+    box-shadow: 10px 10px 190px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 190px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 190px 0px rgba(0,0,0,0.75);
+
+}
+
+#box{
+    width: 45%;
+    height: 80vh;
+
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+
+    border-radius: 10px;
+    box-shadow: 0 20px 25px rgba(0,0,0, 0.25);
+
+}
+
+.img-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 75px 0;
+}
+
+.infos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 30px;
+}
+
+/* lado direito do menu */
+
+#right-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.urna form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.urna label{
+    font-size: 28px;
+    padding: 5px 0;
+}
+
+.urna input{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #d2d2d2;
+    outline: none;
+    margin: 30px 0;
+    padding: 0 10px;
+}
+
+.urna input:focus{
+    border-color: rgb(3, 209, 3);
+}
