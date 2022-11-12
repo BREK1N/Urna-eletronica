@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <title>Urna Eletronica</title>
+</head>
+<body>
+
+    <div id="menu">
+
+        <div id="left-menu">
+            <div id="box">
+                <div class="img-c">
+                    <img class="presidente" src="{{url_for('static', filename='img/presidente.png')}}" alt="Foto do Presidente">
+                    <img src="{{url_for('static', filename='img/vice.png')}}" alt="Foto do vice Presidente" class="vice">
+                </div>
+                {% if urna == '76': %}
+                    <div class="infos">
+                        <h1>Numero: 76</h1>
+                        <br>
+                        <h3>Presidente: André Maciel</h3>
+                        <br>
+                        <h4>Vice-Presidente: Igor Ferreira</h4>
+                        <br>
+                        <br>
+
+                    </div>
+                
+                {% elif urna == '12': %}
+                    <div class="infos">
+                        <h1>Numero: 12</h1>
+                        <br>
+                        <h3>Presidente: Lukas Amaral</h3>
+                        <br>
+                        <h4>Vice-Presidente: Paulo Sergio</h4>
+                        <br>
+                        <br>
+
+                    </div>
+
+                {% else %}
+                    <div class="infos">
+                        <h1>Candidatos</h1>
+                        <br>
+                        <h3>Presidente: Lukas Amaral</h3>
+                        <h4>Numero: 12 </h4>
+                        <br><br>
+                        <h3>Presidente: André Maciel</h3>
+                        <h4>Numero: 76 </h4>
+                        <br>
+                        
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+
+        {% if urna == '76' or urna == "12": %}
+            <div id="right-menu">
+                <div class="urna">
+                    <form action="" method="POST">
+                    <label for="">Votação concluida!!<label>
+                </form>
+                </div>
+            </div>
+        {% else %}
+            <div id="right-menu">
+                <div class="urna">
+                    <form action="" method="POST">
+                    <label for="">Vote!!</label>
+                    <input type="number" name="urna" id="urna">
+                    <input type="submit" value="Votar" class="btn">
+                </form>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+
+    
+</body>
+</html>

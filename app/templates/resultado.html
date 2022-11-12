@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static', filename='css/stylei.css')}}">
+    <meta http-equiv="refresh" content="60">
     <title>Inicio</title>
 </head>
 <body>
@@ -18,12 +19,9 @@
             <div class="infos">
                     <h1>Número: 76</h1>
                     <br>
-                    <h3>Presidente: André Maciel</h3>
+                    <h3>André Maciel</h3>
                     <br>
-                    <h4>Vice-Presidente: Igor Ferreira</h4>
-                    <br>
-                    <br>
-                    <a href="#" class="btn">Plano de Governo</a>
+                    <h4>Votos: {{andre}}</h4>
             </div>
         </div>
 
@@ -35,20 +33,11 @@
             <div class="infos">
                     <h1>Número: 12</h1>
                     <br>
-                    <h3>Presidente: Lukas Amaral</h3>
+                    <h3>Lukas Amaral</h3>
                     <br>
-                    <h4>Vice-Presidente: Paulo Sergio</h4>
-                    <br>
-                    <br>
-                    <a href="#" class="btn">Plano de Governo</a>
+                    <h4>Votos: {{lukas}}</h4>
             </div>
         </div>
     </div>
-    <br><br><br>
-
-    <div class="vot">
-        <a href="{{url_for('votacao')}}" class="btn">Votar</a>
-    </div>
-    
 </body>
 </html>
