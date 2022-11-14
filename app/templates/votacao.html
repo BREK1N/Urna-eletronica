@@ -12,12 +12,12 @@
     <div id="menu">
 
         <div id="left-menu">
-            <div id="box">
-                <div class="img-c">
-                    <img class="presidente" src="{{url_for('static', filename='img/presidente.png')}}" alt="Foto do Presidente">
-                    <img src="{{url_for('static', filename='img/vice.png')}}" alt="Foto do vice Presidente" class="vice">
-                </div>
+            <div id="box">    
                 {% if urna == '76': %}
+                    <div class="img-c">
+                        <img class="presidente" src="{{url_for('static', filename='img/Andre.png')}}" alt="Foto do Presidente">
+                        <img src="{{url_for('static', filename='img/Igor.png')}}" alt="Foto do vice Presidente" class="vice">
+                    </div>
                     <div class="infos">
                         <h1>Numero: 76</h1>
                         <br>
@@ -30,6 +30,10 @@
                     </div>
                 
                 {% elif urna == '12': %}
+                    <div class="img-c">
+                        <img class="presidente2" src="{{url_for('static', filename='img/lukas.png')}}" alt="Foto do Presidente">
+                        <img src="{{url_for('static', filename='img/paulo.png')}}" alt="Foto do vice Presidente" class="vice2">
+                    </div>
                     <div class="infos">
                         <h1>Numero: 12</h1>
                         <br>
@@ -42,6 +46,10 @@
                     </div>
 
                 {% else %}
+                <div class="img-c">
+                    <img class="presidente" src="{{url_for('static', filename='img/presidente.png')}}" alt="Foto do Presidente">
+                    <img src="{{url_for('static', filename='img/vice.png')}}" alt="Foto do vice Presidente" class="vice">
+                </div>
                     <div class="infos">
                         <h1>Candidatos</h1>
                         <br>

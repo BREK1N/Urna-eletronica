@@ -65,6 +65,40 @@ a{
     -moz-box-shadow: 10px 10px 190px 0px rgba(0,0,0,0.75);
 }
 
+.presidente2{
+    width: 10%;
+    border: 1px solid black;
+    border-radius: 50%;
+
+    position: absolute;
+    z-index: 2;
+
+    background: red;
+
+    box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.75);
+}
+
+.vice2{
+    width: 20%;
+    border: 1px solid black;
+    border-radius: 50%;
+
+    margin-top: 155px;
+    margin-left: 130px;
+
+    background: rgb(9, 0, 0);
+
+
+    position: relative;
+    z-index: 4;
+
+    box-shadow: 10px 10px 190px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 190px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 190px 0px rgba(0,0,0,0.75);
+}
+
 #cards{
     width: 100vw;
     height: 80vh;
