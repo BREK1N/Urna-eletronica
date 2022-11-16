@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/mesario.css')}}">
+    <title>Cadastror mesario</title>
+</head>
+<body>
+
+    <section id="mesario">
+        <form action="" method="POST">
+            <div class="name">
+                <Label>Nome</Label>
+                <input type="text" name="nome" id="nome">
+                <Label>Sobrenome</Label>
+                <input type="text" name="sobrenome" id="nome">
+            </div>
+            <div class="turma">
+                <div class="oi">
+                <label for="turma">Turma</label>
+                    <select name="turma" id="turma-sec">
+                        <option value="none" disabled>-----Select-----</option>
+                        <option value="601">601</option>
+                        <option value="701">701</option>
+                        <option value="801">801</option>
+                        <option value="901">901</option>
+                        <option value="1001">1001</option>
+                        <option value="2001">2001</option>
+                        <option value="3001">3001</option>
+                    </select>
+                    <input type="submit" value="Cadastrar">
+                </div>
+            </div>
+            
+        </form>
+    </section>
+    
+</body>
+</html>

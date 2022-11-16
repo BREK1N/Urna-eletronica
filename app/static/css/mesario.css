@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#mesario{
+    width: 75%;
+    height: 75%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: #eee;
+
+    border-radius: 10px;
+    box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.75);
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-size: 2.5rem;
+    font-size: 24px;
+}
+
+.name input{
+    width: 100%;
+    height: 25px;
+
+    margin: 10px;
+}
+
+.name input:focus{
+    outline: none;
+
+    border: 2px solid rgb(3, 255, 255);
+
+}
+
+.turma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-size: 24px;
+
+    margin: 10px;
+}
+
+.oi{
+    margin: 10px;
+}
+
+

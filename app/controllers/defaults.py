@@ -27,3 +27,9 @@ def votacao():
 def resultado():
     return render_template('resultado.html', lukas=len(lukas), andre=len(andre))
 
+@app.route('/mesario')
+def mesario():
+    return render_template('mesario.html')
+
+
+
